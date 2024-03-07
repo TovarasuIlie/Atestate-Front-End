@@ -1,0 +1,246 @@
+.bg-index {
+	background-image: url(../img/bg-index.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.bg-2 {
+	background-image: url(../img/bg-2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.bg-3 {
+	background-image: url(../img/bg-3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.bg-4 {
+	background-image: url(../img/bg-4.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.bg-5 {
+	background-image: url(../img/bg-5.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.bg-6 {
+	background-image: url(../img/bg-6.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.bg-7 {
+	background-image: url(../img/bg-7.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.bg-8 {
+	background-image: url(../img/bg-8.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.bg-9 {
+	background-image: url(../img/bg-9.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.bg-10 {
+	background-image: url(../img/bg-10.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.bg-11 {
+	background-image: url(../img/bg-11.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.wrapper {
+  width: 100%; 
+}
+#sidebar {
+	min-width: 300px;
+	max-width: 300px;
+	background-color: rgb(0, 0, 0, 0.6);
+	color: #fff;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s; 
+}
+#sidebar.active {
+	min-width: 80px;
+	max-width: 80px;
+	text-align: center;
+}
+
+#sidebar.active ul.components li {
+	font-size: 0px;
+}
+
+#sidebar ul.components li {
+	font-size: 16px;
+	font-weight: bolder;
+}
+
+#sidebar.active .exclude:first-child:hover {
+	background-color: rgb(0, 0, 0, 0.0);
+}
+
+#sidebar ul.components li.active-page a {
+	color: #000;
+	background-color: #fff;
+	font-weight: bolder;
+}
+
+#sidebar ul li a:hover {
+	color: #000;
+	background-color: #fff;
+	transition: ease 0.3s;
+	font-weight: bolder;
+}
+
+#sidebar.active ul.components li a {
+	padding: 10px 0; 
+}
+#sidebar.active ul.components li a span {
+	margin-right: 0;
+	display: block;
+	font-size: 25px; 
+}
+#sidebar.active .logo {
+	padding: 10px 0; 
+}
+#sidebar .logo {
+	display: block;
+	color: #fff;
+	font-weight: 900;
+	padding: 10px 30px;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s; 
+}
+@media (prefers-reduced-motion: reduce) {
+	#sidebar .logo {
+		-webkit-transition: none;
+		-o-transition: none;
+		transition: none; 
+	} 
+}
+#sidebar ul.components {
+	padding: 0;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s; 
+}
+@media (prefers-reduced-motion: reduce) {
+	#sidebar ul.components {
+		-webkit-transition: none;
+		-o-transition: none;
+		transition: none;
+	} 
+}
+#sidebar ul li {
+	font-size: 16px; 
+}
+#sidebar ul li > ul {
+	margin-left: 10px; 
+}
+#sidebar ul li > ul li {
+	font-size: 14px; 
+}
+#sidebar ul li a {
+	padding: 10px 30px;
+	display: block;
+	color: white;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.4); 
+}
+#sidebar ul li a span {
+	margin-right: 15px; 
+}
+@media (max-width: 991.98px) {
+	#sidebar ul li a span {
+		display: block; 
+	} 
+}
+
+#sidebar ul li.active > a {
+	background: transparent;
+	color: #fff; 
+}
+@media (max-width: 991.98px) {
+	#sidebar {
+		min-width: 80px;
+		max-width: 80px;
+		text-align: center;
+		margin-left: -80px !important; 
+	}
+	#sidebar.active {
+		margin-left: 0 !important; 
+	} 
+}
+
+@media (max-width: 991.98px) {
+	#sidebarCollapse span {
+	    display: none; 
+	} 
+}
+
+a[data-toggle="collapse"] {
+  position: relative; 
+}
+
+#sidebar ul li span {
+	display: none;
+}
+
+#content {
+  width: 100%;
+  padding: 0;
+  min-height: 96.9vh;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; 
+}
+
+.content-text {
+	font-size: 23px;
+	font-family: 'Philosopher', sans-serif;
+}
+
+@media screen and (max-width: 789px) {
+	#sidebar.active ul.components {
+		display: block;
+	}
+
+	#sidebar.active ul.components li:first-child {
+		display: none;
+	}
+
+	#sidebar ul.components {
+		display: none;
+	}
+
+	.responsive-sidebar {
+		display: block !important;
+	}
+}

@@ -1,0 +1,134 @@
+.bg-beige {
+	background-color: #c8ad7f;
+}
+
+.object-fit {
+	width: 100%; /* width of container */
+    height: 74.1vh; /* height of container */
+    object-fit: cover;
+    object-position: 50% 0;
+}
+
+.title-card {
+	margin-top: 20px; 
+	margin-bottom: 20px; 
+	min-width: 90%;
+}
+
+.nav-item {
+	border-bottom: 3px solid #c8ad7f;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.nav-item:hover {
+	border-bottom: 3px solid #b30000;
+	transition: 0.3s;
+}
+.nav-item .active {
+  border-bottom: 3px solid #b30000;
+}
+
+.align-navbar-center {
+	padding-left: 10vw !important;
+}
+
+@media screen and (max-width: 992px) {
+	.align-navbar-center {
+		padding-left: 0 !important;
+	}
+}
+
+.object-fit-history {
+	width: 100%; /* width of container */
+    height: 25vh; /* height of container */
+    object-fit: cover;
+    object-position: 50% 20%;
+}
+
+.object-fit-history {
+	width: 100%; /* width of container */
+    height: 25vh; /* height of container */
+    object-fit: cover;
+    object-position: 50% 10%;
+}
+
+.object-fit-materias {
+	width: 100%; /* width of container */
+    height: 25vh; /* height of container */
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.object-fit-gallery {
+	width: 100%; /* width of container */
+    height: 25vh; /* height of container */
+    object-fit: cover;
+    object-position: 50% 60%;
+}
+
+@media screen and (max-width: 992px) {
+	.col-lg img {
+		  display: block;
+		  margin-left: auto;
+		  margin-right: auto;
+		  width: 50%;
+	}
+}
+
+.img-center {
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	  width: 70%;
+}
+
+.container-main {
+	width: 70%;
+}
+
+@media screen and (max-width: 992px) {
+	.container-main {
+		width: 95%;
+	}
+}
+
+@media screen and (max-width: 1060px) {
+	.cs-title-font {
+		font-size: 35px;
+	}
+}
+
+
+@media screen and (max-width: 700px) {
+	.cs-title-font {
+		font-size: 25px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.m2-zoom-out {
+		width: 40%;
+		display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+}
+
+.container-newsletter {
+	max-width: 50%;
+}
+
+@media screen and (max-width: 992px) {
+	.btn-subscription {
+		margin-top: 12px;
+	}
+		.container-newsletter {
+		max-width: 60%;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+			.container-newsletter {
+		max-width: 60%;
+	}
+}

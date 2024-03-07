@@ -1,0 +1,21 @@
+.nav-item, footer {
+	font-size: 0.8rem;
+	font-weight: bold;
+}
+
+.object-fit {
+	width: 100%; /* width of container */
+    height: 70vh; /* height of container */
+    object-fit: cover;
+    object-position: 0% 20%;
+}
+
+.align-bottom {
+	position: absolute;
+	bottom: 20px;
+}
+
+main {
+	font-size: 1.3rem;
+	font-family: Times New Roman;
+}

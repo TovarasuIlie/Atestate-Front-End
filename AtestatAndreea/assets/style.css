@@ -1,0 +1,221 @@
+body {
+  font-family: sans-serif;
+}
+
+.wrapper {
+  width: 100%; 
+}
+
+#sidebar {
+    min-width: 80px;
+    max-width: 80px;
+    height: 100vh;
+    color: #fff;
+    position: fixed;
+}
+
+#sidebar .hr {
+  margin-top: 0px;
+  width: 70%;
+}
+
+.sidebar-buttons .btn-outline-light {
+  border: 0px;
+}
+
+#content {
+  width: calc(100% - 80px);
+  padding: 0;
+  margin-left: 80px;
+  /*min-height: 96.9vh;*/
+
+}
+
+.navbar {
+  min-height: 80px !important;
+  font-size: 14px;
+  padding-left: 10vw;
+}
+
+.navbar-index {
+  width: 80%;
+  padding-left: 11.5vw;
+}
+
+.navbar .dropdown-menu {
+  background-color: #000;
+}
+
+.navbar .dropdown-item {
+  color: #999999;
+  font-weight: bold;
+  background-color: #000;
+}
+
+.navbar .dropdown-item:hover {
+  color: #d9d9d9;
+  transition: 0.5 ease;
+}
+
+.navbar .dropdown-item.active {
+  color: #fff;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar {
+    min-width: 100%
+  }
+}
+.bg-black {
+  background-color: #000000;
+}
+
+.vertical-writing {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.index-title {
+  color: #ffff;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.container .index-title {
+  background-color: rgb(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.position-center {
+  position: fixed;
+  top: 50%;
+  left: 67%;
+  transform: translateX(-67%) translateY(-50%);
+}
+
+@media screen and (max-width: 576px) {
+  .index-title {
+    font-size: 30px;
+  }
+}
+
+.form-control {
+  border: none;
+  border-bottom: 2px solid #000;
+  border-radius: 0;
+}
+
+input[placeholder].form-control {
+  font-family: Georgia;
+}
+
+textarea[placeholder].form-control {
+  font-family: Georgia;
+}
+
+.btn-black {
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 0;
+  border: 3px solid #000;
+}
+
+.btn-black:hover {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  border: 3px solid #000;
+  transition: 0.5 ease;
+}
+
+.btn-outline-black {
+  background-color: #fff;
+  color: #000;
+  border-radius: 0;
+  border: 3px solid #000;
+}
+
+.btn-outline-black:hover {
+  background-color: #000;
+  color: #fff;
+  border: 3px solid #000;
+  transition: 0.5 ease;
+}
+
+.nav .nav-link {
+  color: #999999;
+  border: none;
+}
+
+.nav .nav-link:hover {
+  color: #d9d9d9;
+}
+
+.nav .nav-link.active {
+  color: #fff;
+  background-color: #000;
+}
+
+
+.container-fluid.title-card {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  margin-top: -80px;
+}
+
+.sidebar-text {
+  margin-top: 100%;
+}
+@media screen and (max-width: 992px) {
+    .container-fluid.title-card {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    margin-top: 0px;
+  }
+  .sidebar-text {
+    margin-top: 0%;
+  }
+}
+
+.title-card .card {
+  border: none;
+}
+
+.object-fit {
+    height: 100vh; /* height of container */
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 0;
+}
+
+.arhitecture .container {
+  padding-left: 100px;
+  padding-top: 40px;
+}
+
+@media screen and (max-width: 992px) {
+  .arhitecture .container {
+    padding-left: 20px;
+    margin-top: 100px;
+  }
+}
+
+.object-fit {
+  width: 100%; /* width of container */
+    height: 65vh; /* height of container */
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.info-card {
+  display: block;
+}
+
+@media screen and (max-width: 1080px) {
+  .info-card {
+  display: none;
+}
+}

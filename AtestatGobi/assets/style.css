@@ -1,0 +1,27 @@
+body {
+	background-image: url('../img/background.png');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.background-start {
+	background-color: rgb(0, 0, 0, 0.7);
+	height: 52vw;
+	width: 100%;
+}
+
+
+.margin-top-bottom-left-right {
+	margin: 20px !important;
+	padding: 30px;
+}
+
+.font-content {
+	font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+	color: #404040;
+}
+
+.border-img {
+	border-radius: 10px;
+}

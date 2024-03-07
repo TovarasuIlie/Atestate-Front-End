@@ -1,0 +1,30 @@
+body {
+	background-image: url('../img/background.png');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.background-white {
+	background-color: rgb(255, 255, 255, 0.9);
+	padding: 40px;
+}
+
+.bg-violet {
+	background-color: #99004d !important;
+}
+
+.bg-violet-modal {
+	background-color: #99004d !important;
+	color: #fff;
+}
+
+.dropdown-item:hover {
+	background-color: #99004d !important;
+	color: #fff !important;
+}
+
+.active {
+	background-color: #99004d !important;
+	color: #fff !important;
+	}

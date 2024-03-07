@@ -1,0 +1,29 @@
+.object-fit {
+	width: 100%; /* width of container */
+    height: 250px; /* height of container */
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+body {
+    background-image: url('../images/bg-index.jpg');
+    background-color: #fff; /* Used if the image is unavailable */
+    background-attachment: fixed;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+main.container-fluid {
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.navbar-with {
+    max-width: 80%;
+}
+
+@media only screen and (max-width: 1723px) {
+  .navbar-with {
+        max-width: 100%;
+    }
+}

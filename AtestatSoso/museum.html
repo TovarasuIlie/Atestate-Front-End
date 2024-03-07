@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <title>Atestat Soso</title>
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+
+<!--  BOOSTRAP CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+<!--  BOOSTRAP JS/JQUERY -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+  <script src="https://kit.fontawesome.com/0c4d35ef60.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">
+      <img src="img/Art-icon.png" alt="" width="50" height="40" class="d-inline-block">
+      EVOLUATIA PICTURII
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Acasa</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">Galerie</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="history.html">Istorie</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="painters.html">Pictori</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page"  href="museum.html">Muzee</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+       <!--  <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li> -->
+      </ul>
+      <form class="d-flex">
+        <input class="form-control" type="search" placeholder="Cauta..." aria-label="Search">
+        <button class="btn btn-outline-danger" style="width: 130px; margin-left: 10px;" type="submit"><i class="fas fa-search"></i> Cauta!</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- MODAL -->
+  <div class="modal fade" id="picasso" data-bs-keyboard="true" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark">
+      <div class="modal-body">
+        <div id="carouselindicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselindicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselindicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselindicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/painters/picasso1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/painters/picasso2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/painters/picasso3.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselindicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselindicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END MODAL -->
+
+<!-- MODAL -->
+  <div class="modal fade" id="vangogh" data-bs-keyboard="true" tabindex="-1" role="dialog"  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark">
+      <div class="modal-body">
+        <div id="carouselindicators1" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselindicators1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselindicators1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselindicators1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/painters/vangogh1.jpg" class="d-block w-100 h-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/painters/vangogh2.jpg" class="d-block w-100 h-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/painters/vangogh3.jpg" class="d-block w-100 h-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselindicators1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselindicators1" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END MODAL -->
+
+<!-- MODAL -->
+  <div class="modal fade" id="leonardodavinci" data-bs-keyboard="true" tabindex="-1" role="dialog"  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark">
+      <div class="modal-body">
+        <div id="carouselindicators2" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselindicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselindicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselindicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/painters/leonardo1.jpg" class="d-block w-100 h-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/painters/leonardo2.jpg" class="d-block w-100 h-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/painters/leonardo3.jpg" class="d-block w-100 h-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselindicators2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselindicators2" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END MODAL -->
+
+<!-- MODAL -->
+  <div class="modal fade" id="vanrijn" data-bs-keyboard="true" tabindex="-1" role="dialog"  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark">
+      <div class="modal-body">
+        <div id="carouselindicators3" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselindicators3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselindicators3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/painters/vanrijn1.jpg" class="d-block w-100 h-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/painters/vanrijn2.jpg" class="d-block w-100 h-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselindicators3" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselindicators3" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END MODAL -->
+
+<!-- MODAL -->
+  <div class="modal fade" id="michelangelo" data-bs-keyboard="true" tabindex="-1" role="dialog"  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark">
+      <div class="modal-body">
+        <div id="carouselindicators4" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselindicators4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselindicators4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselindicators4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/painters/michelangelo1.jpg" class="d-block w-100 h-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/painters/michelangelo2.jpg" class="d-block w-100 h-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/painters/michelangelo3.png" class="d-block w-100 h-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselindicators4" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselindicators4" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END MODAL -->
+
+
+<main class="container-lg background-dark spacing-container">
+<div class="row">
+  <div class="col-md">
+    <p class="text-uppercase" style="font-size: 30px; font-weight: bolder;">1. Muzeul Luvru</p>
+      <p style="text-indent: 20px;">Muzeul Luvru (în franceză Musée du Louvre) este cel mai mare muzeu de istorie și artă din Franța (după suprafață, 210.000 m2 dintre care 60.600 m2 destinați expozițiilor) și unul dintre cele mai importante muzee din lume. Este situat în centrul capitalei franceze, Paris, între cheiul drept al Senei și strada Rivoli (franceză Quai de Louvre - Rue Am. de Coligny - Rue Rivoli), în primul arondisment, într-o clădire istorică, fost palat regal, Palatul Luvru. Exponatele de artă franțuzești acoperă o largă parte din istoria Franței, de la Dinastia Capețienilor până în prezent.</p>
+      <p style="text-indent: 20px;">Muzeu cu caracter universal, Luvrul posedă opere de artă din epoci diferite ale civilizației, din Antichitate până la 1848, și acoperă o arie geo-culturală întinsă, de la Europa occidentală, Grecia, Egipt până la Orientul Apropiat (la Paris există - în linii mari - o împărțire a domeniilor de expunere muzeală: arta europeană din perioada de după 1848 este încredințată Muzeului d’Orsay și Centrului Pompidou, arta asiatică este expusă la Muzeul național de Arte asiatice Guimet, iar arta africană, americană și din Oceania este sub tutela Muzeului Quai Branly), o serie de capodopere fiind expuse în Pavilionul Sesiunilor al muzeului Luvru. Operele prezente la Luvru au o mare varietate, de la picturi, sculpturi, desene până la ceramică, obiecte arheologice sau alte obiecte de artă.
+      Printre piesele cele mai celebre prezente la Luvru se numără: Codul lui Hammurabi, Venus din Milo, Gioconda de Leonardo da Vinci și Libertatea conducând poporul de Eugène Delacroix. Luvrul este de asemenea unul dintre cele mai vizitate muzee din lume, cu aproximativ 8,5 milioane de vizitatori în 2008. În 2018, Luvru a fost cel mai vizitat muzeu de artă din lume, primind 10,2 milioane de vizitatori.</p>
+  </div>
+  <div class="col-md">
+    <img src="img/luvru.jpg" class="img-border" style="margin: auto; width: 100%;"><br><br>
+    <center><a style="font-weight: 900; font-size: 30px; text-decoration: none" target="_blank" href="https://www.google.ro/maps/place/Muzeul+Luvru/@48.8606111,2.337644,15z/data=!4m5!3m4!1s0x0:0xb975fcfa192f84d4!8m2!3d48.8606111!4d2.337644?hl=ro"><i class="fas fa-thumbtack"></i> LOCATIE MUZEUL LUVRU</a></center>
+  </div>
+</div>
+<br><br>
+<div class="row">
+  <div class="col-md" >
+    <center><img src="img/museumart.jpg" style="width: 90%; margin: auto;" class="img-border"></center><br>
+    <center><a class="text-uppercase" style="font-weight: 900; font-size: 30px; text-decoration: none" target="_blank" href="https://www.google.ro/maps/place/Museum+of+Modern+Art/@40.7614327,-73.9776216,15z/data=!4m2!3m1!1s0x0:0xea9f8fc0b3ffff55?sa=X&hl=ro&ved=2ahUKEwixzc6Wy87vAhUTAxAIHV2CCz4Q_BIwDHoECCoQBQ"><i class="fas fa-thumbtack"></i> LOCATIE Muzeul de Artă Modernă din New York</a></center>
+  </div>
+  <div class="col">
+    <p class="text-uppercase" style="font-size: 30px; font-weight: bolder;">2. Muzeul de Artă Modernă din New York</p>
+      <p style="text-indent: 20px;">Muzeul de Artă Modernă din New York, supranumit și MoMA, a fost fondat în 1929, fiind inițial o instituție de învățământ. El deține o sală de sculptură și săli de pictură cu aproximativ 150.000 de picturi. Muzeul adăpostește picturi celebre ca: Noapte înstelată de Vincent Van Gogh, Les Demoiselles d'Avignon de Pablo Picasso, Boneta de Georges Seurat ș.a.</p>
+      <p style="text-indent: 20px;">Totodată, Muzeul de Artă Modernă din New York mai deține și Biblioteca Muzeului, unde există în jur de 300.000 de cărți, cât și Arhivele Muzeului. Muzeul are un rol bine definit de instituție care educă și creează oportunități prin diferitele conferințe, simpozioane sau colocvii ce se țin aici.</p>
+      <a href="https://www.facebook.com/MuseumofModernArt" style="font-weight: bolder; text-decoration: none;">Pagina de <i class="fab fa-facebook-square"></i> Facebook</a>
+  </div>
+</div>
+<br><br>
+<div class="row">
+  <div class="col">
+    <p class="text-uppercase" style="font-size: 30px; font-weight: bolder;">3. Muzeul Ermitaj</p>
+      <p style="text-indent: 20px;">Muzeul Ermitaj (în rusă: Госуда́рственный Эрмита́ж; pronunție: [ɡəsʊˈdarstvʲɪnɨj ɪrmʲɪˈtaʂ]) este un muzeu situat în centrul orașului Sankt Petersburg, Rusia, pe malul Nevei, în Palatul de Iarnă din Sankt Petersburg, este astăzi unul dintre cele mai mari muzee din lume. Mai mult de 60.000 de piese sunt expuse în aproximativ 1.000 de săli, în timp ce 3 milioane de obiecte sunt păstrate în rezervă. Muzeul prezintă, pe lângă numeroase piese ale antichității, o colecție de opere de artă europene a perioadei clasice care se numără printre cele mai frumoase din lume, alături de cea a muzeului Luvru și muzeului Prado. Printre operele expuse figurează picturi ale maeștrilor olandezi și francezi ca Rembrandt, Rubens, Vincenzo Petrocceli, Matisse și Paul Gauguin.</p> 
+      <p style="text-indent: 20px;">Aici pot fi găsite o pictură în ulei a lui Leonardo da Vinci, cât și 31 de picturi ale lui Pablo Picasso. Muzeul are 2500 de angajați. Clădirile ce adăpostesc muzeul constituie unul dintre principalele ansambluri ale centrului Sankt-Petersburgului, ansamblu inclus în patrimoniul mondial al UNESCO. Muzeul de stat Ermitaj este inclus în lista celor mai vizitate douăzeci de muzee de artă din lume.</p>
+  </div>
+  <div class="col-md">
+      <img src="img/ermitaj.jpg" style="width: 100%;" class="img-border"><br>
+      <center><a class="text-uppercase" style="font-weight: 900; font-size: 30px; text-decoration: none" target="_blank" href="https://www.google.ro/maps/place/Museum+of+Modern+Art/@40.7614327,-73.9776216,15z/data=!4m2!3m1!1s0x0:0xea9f8fc0b3ffff55?sa=X&hl=ro&ved=2ahUKEwixzc6Wy87vAhUTAxAIHV2CCz4Q_BIwDHoECCoQBQ"><i class="fas fa-thumbtack"></i> LOCATIE Muzeul Ermitaj</a></center>
+  </div>
+</div>
+<br><br>
+<div class="row">
+  <div class="col">
+    <img src="img/prado.jpg" style="width: 100%;" class="img-border"><br><br>
+    <center><a class="text-uppercase" style="font-weight: 900; font-size: 30px; text-decoration: none" target="_blank" href="https://www.google.ro/maps?q=Muzeul+Prado+%E2%80%93+Madrid,+Spania&source=lmns&bih=754&biw=1536&hl=ro&sa=X&ved=2ahUKEwjU5qD01c7vAhWUIRoKHee_C8gQ_AUoAnoECAEQAg"><i class="fas fa-thumbtack"></i> LOCATIE Muzeul Prado</a></center>
+  </div>
+  <div class="col-md">
+    <p class="text-uppercase" style="font-size: 30px; font-weight: bolder;">4. Muzeul Prado</p>
+      <p style="text-indent: 20px;">Muzeul Prado (în spaniolă Museo del Prado) este un muzeu și o galerie de artă amplasat în Madrid, Spania. Cuprinde una dintre cele mai interesante colecții de artă europeană, din secolul al XIV-lea și până la începutul secolului al XIX-lea.
+      Fondat ca muzeu de pictură și sculptură, "el Prado" conține de asemenea o importantă colecție de peste 5.000 de desene, 2.000 de afișe, 1.000 de monede și aproape 2.000 de obiecte decorative și lucrări de artă. Sculptura este reprezentată prin peste 700 de lucrări și printr-un număr mai mic de fragmente sculpturale. Superba galerie de tablouri (8.600 de picturi) este factorul care îi conferă muzeului renumele internațional. Indiscutabil, în Prado se află cele mai mari colecții de lucrări ale spaniolilor Diego Velázquez și Francisco Goya, precum și ale lui Hieronymus Bosch (favoritul Regelui Filip al II-lea al Spaniei). Muzeul expune o serie de colecții excelente semnate El Greco, Peter Paul Rubens, Rafael, Tițian, Bartolome Esteban Murillo. Lucrări ale lui Melozzo da Forlì, Botticelli, Caravaggio, Albrecht Dürer, Rembrandt, Veronese și mulți alții sunt de asemenea de văzut în Prado.</p>
+      <p style="text-indent: 20px;">Cea mai cunoscută operă de artă expusă este Las Meninas de Velázquez. nu doar a oferit muzeului propriile sale tablouri superbe, ci chiar a atras prin sensibilitatea sa artistică mare parte din colecția de maeștrii italieni a muzeului.
+      Faimoasa pictură Guernica (pictură) de Pablo Picasso a fost expusă la Prado, după revenirea acesteia în Spania, în urma restaurării democrației, dar aceasta a fost mutată la Museo Reina Sofia unde a fost găsit un spațiu expozițional mai mare pentru imensa pânză.</p>
+      <a href="https://www.infotour.ro/ghid-turistic/muzee-si-galerii-de-arta/muzeul-prado-din-madrid-2939" style="font-weight: bolder; text-decoration: none;"><i class="fas fa-sitemap"></i> Mai Multe Informatii</a>
+  </div>
+</div>
+<br><br>
+<div class="row">
+  <div class="col">
+    <p class="text-uppercase" style="font-size: 30px; font-weight: bolder;">5. Muzeul Old National Gallery</p>
+      <p style="text-indent: 20px;">Old National Gallery este unul dintre muzeele care alcătuiesc faimoasele muzee naționale din Berlin și, împreună cu muzeele Old (Altes), Bode, New (Neues) și Pergamon situate pe Insula Muzeelor ​​din oraș, a fost listată în 1999 ca UNESCO Situl Patrimoniului Mondial . Cuvântul „Vechi” în numele său se referă atât la vârsta relativă a clădirii (a fost finalizată în 1876, cât și la Noua Galerie Națională în 1968) și la vârsta relativă a colecției sale. Lucrările artiștilor germani din secolul al XIX-lea sunt deosebit de remarcabile. Galeria se mândrește cu una dintre cele mai fine și mai cuprinzătoare colecții de acest gen, cu lucrări de artă variind în data compoziției, de la Revoluția Franceză până la Primul Război Mondial.și reprezentând contribuțiile majore ale perioadei, de la clasicism la Sezession Wiener. Vechea Galerie Națională conține trei etaje de spațiu expozițional, unde lucrările sunt afișate în funcție de teme organizate de mișcări artistice, stiluri sau școli. Exponatele semnificative includ epoca Goethe , reprezentată de artiști precum Jakob Philipp Hackert, Wilhelm Schadow și Anton Graff. Exemple de artă romantică includ o serie de picturi ale maestrului german Caspar David Friedrich , precum și portrete ale lui Philipp Otto Runge . Colecția galeriei de picturi impresioniste include lucrările lui Édouard Manet , Claude Monet ,Pierre-Auguste Renoir , Edgar Degas și Paul Cézanne . Printre sculpturile expuse se numără piese de Auguste Rodin și Johann Gottfried Schadow .</p>
+      <a href="https://ro.theplanetsworld.com/1623-top-rated-museums-and-art-galleries-in-berlin-d-zzz-11-ro" style="font-weight: bolder; text-decoration: none;"><i class="fas fa-sitemap"></i> Mai Multe Informatii</a>
+  </div>
+  <div class="col-md-5">
+      <img src="img/oldnationgallery.jpg" style="width: 100%;" class="img-border"><br>
+    <center><a class="text-uppercase" style="font-weight: 900; font-size: 30px; text-decoration: none" target="_blank" href="https://www.google.ro/maps?q=Galeria+Na%C5%A3ional%C4%83+de+Pictur%C4%83-Berlin,+Germania&source=lmns&bih=698&biw=1536&hl=ro&sa=X&ved=2ahUKEwjH-d7N1s7vAhUG4hoKHZ4RBKsQ_AUoAXoECAEQAQ"><i class="fas fa-thumbtack"></i> LOCATIE Old National Gallery</a></center>
+  </div>
+</div>
+<br><br>
+<div class="row">
+  <div class="col-md" >
+    <center><img src="img/musseedorsay.jpg" style="width: 90%; margin: auto;" class="img-border"></center><br>
+    <center><a class="text-uppercase" style="font-weight: 900; font-size: 30px; text-decoration: none" target="_blank" href="https://www.google.ro/maps/search/Mus%C3%A9e+d'Orsay%E2%80%93+Paris,+Fran%C5%A3a/@48.8602541,2.3237689,17z/data=!3m1!4b1?hl=ro"><i class="fas fa-thumbtack"></i> LOCATIE Muzeul d'Orsay</a></center>
+  </div>
+  <div class="col">
+    <p class="text-uppercase" style="font-size: 30px; font-weight: bolder;">6. Musée d'Orsay</p>
+      <p style="text-indent: 20px;">Musée d'Orsay (în română Muzeul d'Orsay) este un muzeu aflat în capitala Franței, Paris, situat pe cheiul stâng al Senei, în arondismentul 7. A fost inaugurat în 1986, fiind amenajat în clădirea Gării d'Orsay, care a fost reconfigurată între anii 1983-1986, pentru a putea găzdui muzeul. Colecțiile Muzeului d'Orsay constau în principal în opere din perioada 1848-1914, de artă plastică și sculptură, însă acesta prezintă și opere de artă decorativă, fotografie și arhitectură.</p>
+      <p style="text-indent: 20px;">Muzeul deține cea mai mare colecție a impresioniștilor (aproximativ 440 de picturi) și post-impresioniștilor din lume, peste 900 de pânze dintr-un total de 3300. Aici se pot vedea capodopere ca Dejunul pe iarbă și Olympia de Édouard Manet, Originea lumii, O înmormântare la Ornans, Atelierul pictorului de Courbet sau seria catedralelor de la Rouen de Monet și Bal du moulin de la Galette de Renoir..</p>
+      <a href="https://www.tititudorancea.com/z/muzeul_orsay_paris.html" style="font-weight: bolder; text-decoration: none;"><i class="fas fa-sitemap"></i> Mai Multe Informatii</a>
+  </div>
+</div>
+</main>
+
+<footer class="bg-dark text-white text-center text-lg-start" style="margin-top: 20px;">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Evolutia Picturii</h5>
+
+        <p>
+          "Nu este universal cel care nu iubeşte în egală masură toate lucrurile care aparţin de pictură." - Leonardo da Vinci
+        </p>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-0">Link-uri</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="https://www.facebook.com/Art-of-Painting-107676967813863" class="text-white text-uppercase" style="text-decoration: none;"><i class="fab fa-facebook-square"></i> Facebook</a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UCdZutxI1UnH9N3Fh_TeQ4Kw" class="text-white text-uppercase" style="text-decoration: none;"><i class="fab fa-youtube"></i> Youtube</a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/explore/tags/artofpainting/" class="text-white text-uppercase" style="text-decoration: none;"><i class="fab fa-instagram"></i> Instagram</a>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 - 2021 Copyright. All Rights Reseved | by Donea Adriana Sorina ©
+  </div>
+  <!-- Copyright -->
+</footer>
+</body>
+</html>

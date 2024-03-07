@@ -1,0 +1,74 @@
+.card-index {
+	border: 0;
+	border-radius: 0;
+}
+
+.card-index .object-fit {
+	width: 100%; /* width of container */
+    height: 40vw; /* height of container */
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.card-index .card-img-overlay {
+	background-color: rgba(0, 0, 0, 0.7);
+	padding-left: 10%;
+	padding-top: 10%;
+}
+
+.card-index .card-title {
+	font-size: 4vw;
+	font-family: 'Instrument Serif', serif;
+}
+
+.card-index .card-text {
+	font-size: calc(1vw + 5px);
+	font-family: 'Playfair Display', serif;
+	line-height: 0px;
+}
+
+.first-container {
+	background-color: white;
+	position: relative;
+	top: -10vw;
+	bottom: -10vw;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	max-width: 80%;
+	padding: 50px;
+	margin-bottom: 0;
+	box-shadow: 1px 1px 100px 1px rgba(0, 0, 0, 0.5);
+	font-family: 'Arial';
+}
+
+@media only screen and (max-width: 600px) {
+	.first-container {
+		top: 0px;
+		max-width: 100%;
+	}
+}
+
+.gallery .card {
+	border: 0;
+}
+
+.gallery img:hover {
+	opacity: 0.8;
+	cursor: zoom-in;
+	transition: opacity 0.5s;
+	transition-timing-function: ease;
+}
+
+.modal-content {
+	background-color: transparent;
+	border: 0;
+}
+
+.nav-tabs .nav-link {
+	color: black;
+}
+
+.nav-tabs .active {
+	background-color: rgba(0, 0, 0, 0.7) !important;
+	color: white !important;
+}
